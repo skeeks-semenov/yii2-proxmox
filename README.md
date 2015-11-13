@@ -98,6 +98,31 @@ Array
 )
 ```
 
+```php
+// It is common to fetch images and then use base64 to display the image easily in a webpage
+\Yii::$app->proxmox->api->setResponseType('pngb64'); // Sample format: data:image/png;base64,iVBORw0KGgoAAAA...
+$base64 = \Yii::$app->proxmox->api->get('/nodes/hosting4-skeeks/rrd', ['ds' => 'cpu', 'timeframe' => 'day']);
+// So we can do something like this
+echo "<img src='{$base64}' \>";
+```
+
+```php
+// Ask for nodes, gives back a PHP string with HTML response
+\Yii::$app->proxmox->api->get('/nodes');
+
+// Change response type to JSON
+\Yii::$app->proxmox->api->setResponseType('json');
+
+// Now asking for nodes gives back JSON raw string
+\Yii::$app->proxmox->api->get('/nodes');
+
+// If you want again return PHP arrays you can use the 'array' format.
+\Yii::$app->proxmox->api->setResponseType('array');
+
+// Also you can call getResponseType for whatever reason you have
+$responseType = \Yii::$app->proxmox->api->getResponseType();  // array
+```
+
 
 Docs
 ----
