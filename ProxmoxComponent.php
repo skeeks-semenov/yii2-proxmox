@@ -13,6 +13,8 @@ use ProxmoxVE\Proxmox;
 use yii\base\Component;
 
 /**
+ * @property \Exception $error
+ *
  * Class ProxmoxComponent
  * @package skeeks\proxmox
  */
@@ -51,11 +53,13 @@ class ProxmoxComponent extends Component
     /**
      * @var \Exception
      */
-    protected $error;
+    protected $_error;
 
     public function init()
     {
         parent::init();
+
+        $this->_error    = null;
 
         try
         {
@@ -71,12 +75,20 @@ class ProxmoxComponent extends Component
         } catch (AuthenticationException $e)
         {
             $this->api      = null;
-            $this->error    = $e;
+            $this->_error    = $e;
         } catch (MalformedCredentialsException $e)
         {
             $this->api      = null;
-            $this->error    = $e;
+            $this->_error    = $e;
         }
+    }
+
+    /**
+     * @return \Exception
+     */
+    public function getError()
+    {
+        return $this->_error;
     }
 }
 
