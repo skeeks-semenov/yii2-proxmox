@@ -19,9 +19,10 @@ Or add this to your `composer.json` file:
 }
 ```
 
-
-Config
+Usage
 -----
+
+Config:
 
 ```php
 
@@ -45,8 +46,7 @@ Config
 
 ````
 
-Usage
------
+Usage:
 
 ```php
 
