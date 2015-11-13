@@ -1,4 +1,4 @@
-ProxmoxVE API Client for yii2"
+ProxmoxVE API Client for yii2
 ================
 
 
@@ -6,7 +6,7 @@ Installation
 ------------
 
 ```sh
-$ composer require skeeks/yii2-proxmox *
+$ composer require skeeks/yii2-proxmox "*"
 ```
 
 Or add this to your `composer.json` file:
