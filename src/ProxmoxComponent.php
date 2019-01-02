@@ -1,9 +1,9 @@
 <?php
 /**
+ * @link https://cms.skeeks.com/
+ * @copyright Copyright (c) 2010 SkeekS
+ * @license https://cms.skeeks.com/license/
  * @author Semenov Alexander <semenov@skeeks.com>
- * @link http://skeeks.com/
- * @copyright 2010 SkeekS (СкикС)
- * @date 14.11.2015
  */
 namespace skeeks\proxmox;
 
@@ -13,10 +13,7 @@ use ProxmoxVE\Proxmox;
 use yii\base\Component;
 
 /**
- * @property \Exception $error
- *
- * Class ProxmoxComponent
- * @package skeeks\proxmox
+ * @author Semenov Alexander <semenov@skeeks.com>
  */
 class ProxmoxComponent extends Component
 {
