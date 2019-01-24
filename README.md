@@ -1,8 +1,8 @@
 ProxmoxVE API Client for yii2
 ================
 
-[![Latest Stable Version](https://poser.pugx.org/skeeks/yii2-proxmox/v/stable.png)](https://packagist.org/packages/skeeks/yii2-proxmox)
-[![Total Downloads](https://poser.pugx.org/skeeks/yii2-proxmox/downloads.png)](https://packagist.org/packages/skeeks/yii2-proxmox)
+[![Latest Stable Version](https://img.shields.io/packagist/v/skeeks/yii2-proxmox.svg)](https://packagist.org/packages/skeeks/yii2-proxmox)
+[![Total Downloads](https://img.shields.io/packagist/dt/skeeks/yii2-proxmox.svg)](https://packagist.org/packages/skeeks/yii2-proxmox)
 
 Installation
 ------------
